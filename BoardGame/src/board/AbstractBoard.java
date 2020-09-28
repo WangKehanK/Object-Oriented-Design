@@ -1,7 +1,7 @@
 package board;
 
 /**
- * The abstract board class implements the public methods of the board class and provides abstract methods for the special board
+ AbstractBoard - The abstract board class implements the Board interface，and here contains abstract methods for base board, and this can be extended for any kind of board game easily,
  */
 public abstract class AbstractBoard implements Board{
     protected int rowNum;

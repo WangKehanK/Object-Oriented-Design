@@ -1,7 +1,7 @@
 package board;
 
 /**
- * Board - An interface includes the method that check board status and basic method of setting the board
+ Board - An interface includes the method that check board status(the position of marks...) and basic operations for setting up the board
  */
 public interface Board {
     void setBoard(int rowNum, int colNum, String s);

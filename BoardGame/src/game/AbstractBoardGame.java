@@ -42,7 +42,7 @@ public abstract class AbstractBoardGame implements Game, Winnable {
     @Override
     public void startGame() {
         System.out.println("Welcome to " + gameName + ".");
-        System.out.println("Always enter the number of corresponding cell to palce the mark. ");
+        System.out.println("Always enter the number of corresponding cell to place the mark. ");
         System.out.println();
 
         while (true) {
@@ -96,7 +96,7 @@ public abstract class AbstractBoardGame implements Game, Winnable {
         Player player = teamList.get(personNumber);
         String pieceType = getPieceType(teamName, personNumber, player.getName());
 
-        int putNumber = getPutNumber("please Team " + teamName + " Player No." + (personNumber + 1) + " " + player.getName() + " place the mark: (e.g 1)");
+        int putNumber = getPutNumber("please Team " + teamName + " Player No." + (personNumber + 1) + " " + player.getName() + " place the mark: ");
 
         lastPiece = pieceType;
         lastPutNumber = putNumber;
@@ -125,14 +125,15 @@ public abstract class AbstractBoardGame implements Game, Winnable {
 
 
     protected void getTeammateNumber() {
+        String empty = new String();
         while (true) {
-            System.out.println("Please enter teammate number: (e.g 1)");
+            System.out.println("Please enter the team size: ");
             String teammateNumberStr = InputUtil.getInput();
             if (NumberUtil.isNumber(teammateNumberStr)) {
                 teammateNumber = Integer.parseInt(teammateNumberStr);
                 break;
             }
-            System.out.println("please enter an valid number.");
+            System.out.println("please enter an valid number. (e.g: 1)");
         }
     }
 
@@ -162,7 +163,7 @@ public abstract class AbstractBoardGame implements Game, Winnable {
                     }
                 }
             }
-            System.out.println("please enter an valid number.");
+            System.out.println("please enter an valid number. (e.g: 1)");
         }
         return putNumber;
     }
@@ -181,8 +182,8 @@ public abstract class AbstractBoardGame implements Game, Winnable {
                 userChoose = false;
                 break;
             }
+            System.out.println("Please enter an valid letter (Y or N)");
         }
-
         if (userChoose) {
             return true;
         } else {

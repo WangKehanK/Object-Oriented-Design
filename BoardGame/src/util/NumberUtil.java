@@ -3,7 +3,7 @@ package util;
 import java.util.regex.Pattern;
 
 /**
- * NumberUtil - is class that providing digital operation methods that used in game
+ NumberUtil - A class that providing support to handle numeric input
  */
 public class NumberUtil {
     public static boolean isNumber(String s) {

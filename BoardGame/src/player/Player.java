@@ -1,7 +1,7 @@
 package player;
 
 /**
- * Player - is a class save basic player information and game condition, including the number of win, tie, or lose games
+ Player - A class representing a board game player, it provides support to be extended so the basic player information and condition, including the number of win, tie, or lose games can be fit to different player.
  */
 public class Player {
     private String name;

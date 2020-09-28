@@ -1,5 +1,5 @@
 /**
- * Game Type - An enumeration type, provide game interface options
+ GameType - An enumeration type, provide corresponding game iterface options
  */
 public enum GameType {
     TicTacToe("1", "TicTacToe"),

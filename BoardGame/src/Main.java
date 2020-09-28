@@ -9,7 +9,11 @@ public class Main {
     public static void main(String[] args) {
         GameFactory gameFactory = new GameFactory();
         while (true) {
+            System.out.println("********************  OOP BoardGame   **********************");
+            System.out.println("Enter corresponding number to choose the game you want play!");
+            System.out.println("************************************************************");
             gameFactory.printGameList();
+            System.out.println("Pick the game or Exit the program: ");
             String gameType = InputUtil.getInput();
             if (GameType.Exit.getGameType().equals(gameType)) {
                 System.out.println("Thank You!!!");

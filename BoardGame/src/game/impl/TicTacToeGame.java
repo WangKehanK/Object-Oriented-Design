@@ -9,8 +9,7 @@ import util.NumberUtil;
 import java.util.List;
 
 /**
- * TicTacToe Game
- * extends AbstractBoardGame, more details game setting
+ TicTacToe - extends AbstractBoardGame, with specific game setting
  */
 public class TicTacToeGame extends AbstractBoardGame {
 
@@ -25,7 +24,7 @@ public class TicTacToeGame extends AbstractBoardGame {
     protected void initBoard() {
         int size;
         while (true) {
-            System.out.println("Please enter board size: (e.g 3)");
+            System.out.println("Please enter board size: ");
             String teammateNumberStr = InputUtil.getInput();
             if (NumberUtil.isNumber(teammateNumberStr)) {
                 int number = Integer.parseInt(teammateNumberStr);
@@ -34,7 +33,7 @@ public class TicTacToeGame extends AbstractBoardGame {
                     break;
                 }
             }
-            System.out.println("please enter an valid number.");
+            System.out.println("please enter an valid number. (e.g: 3)");
         }
         victoryPieceNum = size;
         board = new TicTacToeBoard(size);

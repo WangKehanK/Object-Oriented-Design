@@ -3,7 +3,7 @@ import game.impl.OrderAndChaosGame;
 import game.impl.TicTacToeGame;
 
 /**
- * Game factory - According to the parameters passed in, the corresponding Game object can be generated
+ GameFactory - A class that can generate the corresponding game according to the parameters passed in.
  */
 public class GameFactory {
 

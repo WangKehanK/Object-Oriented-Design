@@ -3,7 +3,7 @@ package board.impl;
 import board.AbstractBoard;
 
 /**
- * TicTacToe class that extends AbstractBoard
+ TicTacToeBoard - TicTacToe class that extends AbstractBoard, with specific game setting - the board size can be modified
  */
 public class TicTacToeBoard extends AbstractBoard {
     private int size;

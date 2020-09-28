@@ -1,7 +1,7 @@
 package game;
 
 /**
- * Game Interface, including the basic operations for starting game
+ Game - Game Interface, including the basic functions for starting game.
  */
 public interface Game {
     void initGame();

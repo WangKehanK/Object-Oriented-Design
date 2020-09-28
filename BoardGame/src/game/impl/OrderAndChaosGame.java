@@ -8,8 +8,7 @@ import util.InputUtil;
 import java.util.List;
 
 /**
- * OrderAndChaos Game
- * more details game setting
+ OrderAndChaos - extends AbstractBoardGame, with specific game setting
  */
 public class OrderAndChaosGame extends AbstractBoardGame {
 
@@ -29,7 +28,7 @@ public class OrderAndChaosGame extends AbstractBoardGame {
     @Override
     protected String getPieceType(String teamName, int personNumber, String playerName) {
         while (true) {
-            String tip = "please Team " + teamName + " Player No." + (personNumber + 1) + " " + playerName + " choice piece type:";
+            String tip = "please Team " + teamName + " Player No." + (personNumber + 1) + " " + playerName + " choose mark type:";
             System.out.println(tip);
             String input = InputUtil.getInput();
             if (input != null && (input.equalsIgnoreCase("X") || input.equalsIgnoreCase("O"))) {

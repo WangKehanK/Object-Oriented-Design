@@ -3,7 +3,7 @@ package util;
 import java.util.Scanner;
 
 /**
- * InputUtil is a class used to obtain the data input by the user
+ InputUtil - A class used to obtain the data input by the user
  */
 public class InputUtil {
 
