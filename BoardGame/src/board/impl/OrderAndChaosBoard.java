@@ -3,7 +3,7 @@ package board.impl;
 import board.AbstractBoard;
 
 /**
- * OrderAndChaos 棋盘的特殊设置
+ * OrderAndChaos
  */
 public class OrderAndChaosBoard extends AbstractBoard {
 
