@@ -42,6 +42,7 @@ public abstract class AbstractBoardGame implements Game, Winnable {
     @Override
     public void startGame() {
         System.out.println("Welcome to " + gameName + ".");
+        System.out.println("Always enter the number of corresponding cell to palce the mark. ");
         System.out.println();
 
         while (true) {
@@ -95,7 +96,7 @@ public abstract class AbstractBoardGame implements Game, Winnable {
         Player player = teamList.get(personNumber);
         String pieceType = getPieceType(teamName, personNumber, player.getName());
 
-        int putNumber = getPutNumber("please Team " + teamName + " Player No." + (personNumber + 1) + " " + player.getName() + " put piece:");
+        int putNumber = getPutNumber("please Team " + teamName + " Player No." + (personNumber + 1) + " " + player.getName() + " place the mark: (e.g 1)");
 
         lastPiece = pieceType;
         lastPutNumber = putNumber;
@@ -125,7 +126,7 @@ public abstract class AbstractBoardGame implements Game, Winnable {
 
     protected void getTeammateNumber() {
         while (true) {
-            System.out.println("Please input teammate number:");
+            System.out.println("Please enter teammate number: (e.g 1)");
             String teammateNumberStr = InputUtil.getInput();
             if (NumberUtil.isNumber(teammateNumberStr)) {
                 teammateNumber = Integer.parseInt(teammateNumberStr);
@@ -137,7 +138,7 @@ public abstract class AbstractBoardGame implements Game, Winnable {
 
     protected void initTeam(List<Player> team, String teamName) {
         for (int i = 0; i < teammateNumber; i++) {
-            System.out.println("please input team " + teamName + " player No." + (i + 1) + " name:");
+            System.out.println("please enter team " + teamName + " player No." + (i + 1) + " name:");
             String playerName = InputUtil.getInput();
             Player player = new Player(playerName, teamName, (i + 1));
             team.add(player);
@@ -190,7 +191,7 @@ public abstract class AbstractBoardGame implements Game, Winnable {
     }
 
     protected void printSummary() {
-        //总结
+        // print summary
         System.out.println();
         System.out.println();
         System.out.println("-------Team " + team1Name + "---------");

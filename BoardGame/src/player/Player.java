@@ -39,7 +39,7 @@ public class Player {
     @Override
     public String toString() {
         return "Player " + name + " team " + teamName + " personNo." + personNum +
-                ": game Number = " + gameNum + ", victory Number = "+ victoryNum + ", peace game Number = " + this.peaceNum;
+                ": game Number = " + gameNum + ", victory Number = "+ victoryNum + ", tied game Number = " + this.peaceNum;
     }
 
     public void addVictoryNum() {

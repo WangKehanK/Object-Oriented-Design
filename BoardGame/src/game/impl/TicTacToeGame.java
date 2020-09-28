@@ -25,7 +25,7 @@ public class TicTacToeGame extends AbstractBoardGame {
     protected void initBoard() {
         int size;
         while (true) {
-            System.out.println("Please input board size:");
+            System.out.println("Please enter board size: (e.g 3)");
             String teammateNumberStr = InputUtil.getInput();
             if (NumberUtil.isNumber(teammateNumberStr)) {
                 int number = Integer.parseInt(teammateNumberStr);
