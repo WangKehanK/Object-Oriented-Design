@@ -151,7 +151,7 @@ public abstract class AbstractBoardGame implements Game, Winnable {
         while (true) {
             System.out.println(tip);
             String input = InputUtil.getInput();
-            if (NumberUtil.isNumber(input)) {
+            if (input != null && !"".equals(input) && NumberUtil.isNumber(input)) {
                 int number = Integer.parseInt(input);
                 if (number > 0 && number <= board.getCellNumber()) {
                     if (board.getBoard(number - 1) != null) {
