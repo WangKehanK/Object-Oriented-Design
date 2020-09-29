@@ -32,7 +32,7 @@ public class OrderAndChaosGame extends AbstractBoardGame {
             System.out.println(tip);
             String input = InputUtil.getInput();
             if (input != null && (input.equalsIgnoreCase("X") || input.equalsIgnoreCase("O"))) {
-                return input;
+                return input.toUpperCase();
             }
             System.out.println("please enter X or O");
         }
