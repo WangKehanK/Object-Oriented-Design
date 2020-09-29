@@ -129,7 +129,7 @@ public abstract class AbstractBoardGame implements Game, Winnable {
         while (true) {
             System.out.println("Please enter the team size: ");
             String teammateNumberStr = InputUtil.getInput();
-            if (NumberUtil.isNumber(teammateNumberStr)) {
+            if (teammateNumberStr != null && !"".equals(teammateNumberStr) && NumberUtil.isNumber(teammateNumberStr)) {
                 teammateNumber = Integer.parseInt(teammateNumberStr);
                 break;
             }
