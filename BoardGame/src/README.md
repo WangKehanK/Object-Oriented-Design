@@ -9,9 +9,9 @@ StudentID: U02298414
 - For Order and Chaos, I assume team Order will win as long as they can have five of same type marks in a horizontal, vertical, or diagonal row.
 - (bonus) For both games, I allow each team to choose the total number of teammates they can have on their own. e.g You can choose to play a single vs single game, or you can have 10 people in your team. The system will randomly make a decision on who will placing the mark.
 - For both games, each cell of the board will be printed with a number, after you can enter the corresponding number to place the mark at the desired position, the number will be replaced by the corresponding mark. 
-- For both games, I've implemented to handle most of special cases. For example, when you enter 10 to a 3x3 Board or enter "a" to a team size, the system will print that "Please enter a valid number".
+- For both games, I've implemented to handle most of special cases. For example, when you enter 10 to a 3x3 Board or enter "a" to a team size or you enter a "" string, the system will remind you. Also, I assume the player will always enter the number of corresponding cell to place the mark, e.g for TicTacToe, when you enter 1 for team 1, the position 1 will be filled by X; and when you enter 2 for team 2, the position 2 will be filled by O. If not, the system will remind you.
 - For both games, when the team size is greater than 1, I assume the player will not enter the duplicated name; I also assume the user will never input any empty contents.
-- The player should always enter the number of corresponding cell to place the mark, e.g for TicTacToe, when you enter 1 for team 1, the position 1 will be filled by X; and when you enter 2 for team 2, the position 2 will be filled by O.
+
 
 ## 2. Structure 
 ```
