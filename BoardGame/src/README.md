@@ -11,6 +11,8 @@ StudentID: U02298414
 - For both games, each cell of the board will be printed with a number, after you can enter the corresponding number to place the mark at the desired position, the number will be replaced by the corresponding mark. 
 - For both games, I've implemented to handle most of special cases. For example, when you enter 10 to a 3x3 Board or enter "a" to a team size, the system will print that "Please enter a valid number".
 - For both games, when the team size is greater than 1, I assume the player will not enter the duplicated name; I also assume the user will never input any empty contents.
+- The player should always enter the number of corresponding cell to place the mark, e.g for TicTacToe, when you enter 1 for team 1, the position 1 will be filled by X; and when you enter 2 for team 2, the position 2 will be filled by O.
+
 ## 2. Structure 
 ```
 ├─board
@@ -103,7 +105,8 @@ please Team 1 Player No.1 Kehan put piece:
 ```
 As you can observe above, when you enter 1 for team 1, the position 1 will be filled by X; and when you enter 2, the position 2 will be filled by O.
 
-Let's see an example game that team 1 win. 
+
+OK! Let's see an example game that team 1 wins. 
 ```
 +------+------+------+
 |     X|     O|     3|

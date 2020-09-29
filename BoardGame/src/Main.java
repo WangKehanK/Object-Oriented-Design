@@ -13,7 +13,7 @@ public class Main {
             System.out.println("Enter corresponding number to choose the game you want play!");
             System.out.println("************************************************************");
             gameFactory.printGameList();
-            System.out.println("Pick the game or Exit the program: ");
+            System.out.println("Enter 1~3 to pick the game or exit: ");
             String gameType = InputUtil.getInput();
             if (GameType.Exit.getGameType().equals(gameType)) {
                 System.out.println("Thank You!!!");
