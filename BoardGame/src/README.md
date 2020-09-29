@@ -67,7 +67,7 @@ please input team 2 player No.1 name:
 ```
 Now, our player is ready.
 ```
-# Let's see a 3v3 game
+# Let's see a 3*3 board game
 Please input board size:
 > 3
 
