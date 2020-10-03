@@ -3,7 +3,6 @@ Name: Kehan Wang
 
 Email: wangkk@bu.edu
 
-StudentID: U02298414
 ## 1. Introduction
 - For TicTacToe, I assume my board is always NxN(smallest size if 3x3), and the game rule will be changed as the board size changes, e.g in order to win a game on a 3x3 board game, you have to place three of marks in a horizontal, vertical, or diagonal row; in order to win a game on a 4x4 board game, you have to place four of marks in a horizontal, vertical, or diagonal row...
 - For Order and Chaos, I assume team Order will win as long as they can have five of same type marks in a horizontal, vertical, or diagonal row.
